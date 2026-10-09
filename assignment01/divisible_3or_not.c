@@ -1,15 +1,17 @@
 #include<stdio.h>
 int main()
 {
-   int a;
-   scanf("%d", a);
-   if (a % 3 == 0)
+   int n;
+   scanf("%d", &n);
+   for (int i = 1; i <= n; i++)
    {
-    printf("YES");
+     if (condition)
+     {
+        /* code */
+     }
+     
    }
-   else{
-    printf("NO");
-   }
+   
    
 
    return 0;
