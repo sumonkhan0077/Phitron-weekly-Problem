@@ -1,10 +1,16 @@
 #include<stdio.h>
 int main()
 {
-   int a , b;
-   scanf("%d %d" , &a , &b);
-   int mul = a * b;
-   printf("%d", mul);
+   int n;
+   scanf("%d", &n);
+   for (int i = 1; i <= n; i++)
+   {
+    if (i % 3 == 0 && i % 7 == 0)
+    {
+      printf("%d\n", i);
+    }
+     
+   }
 
    return 0;
 }
