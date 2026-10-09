@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    printf("Hello, world! I am learning C programming language. ^_^\n");
-
-    printf("Programming is fun and challenging. /\\/\\/\\\n");
-
-    printf("I want to give my 100%% dedication to learn!\tI will succeed one day.");
+   int a;
+   long long int b;
+   scanf("%d %lld" , &a , &b);
+   long long int mul = a * b;
+   printf("%lld", mul);
 
    return 0;
 }
