@@ -1,16 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-   int n;
-   scanf("%d", &n);
-   for (int i = 1; i <= n; i++)
-   {
-    if (i % 3 == 0 && i % 7 == 0)
-    {
-      printf("%d\n", i);
-    }
-     
-   }
+  long long int n;
+  scanf("%lld", &n);
+  if (n > 1000)
+  {
+    printf("I will buy Punjabi\n");
 
-   return 0;
+    n = n - 1000;
+    if (n >= 500)
+    {
+      printf("I will buy new shoes\n");
+      printf("Alisa will buy new shoes");
+    }
+  }
+  else
+  {
+    printf("Bad luck!");
+  }
+
+  return 0;
 }
