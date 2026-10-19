@@ -9,6 +9,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &x);
+         printf("%d ", x);
         if (x > 0)
         {
             pas_sum += x;
@@ -18,8 +19,8 @@ int main()
         }
 
     }
-     printf("%d ", pas_sum);
-     printf("%d ", neg_sum);
+    //  printf("%d ", pas_sum);
+    //  printf("%d ", neg_sum);
     
     return 0;
 }
