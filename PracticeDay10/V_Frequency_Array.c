@@ -21,8 +21,7 @@ int main()
       printf("%d\n", fre[i]);
     }
     
-    
-    
+
     
     return 0;
 }
