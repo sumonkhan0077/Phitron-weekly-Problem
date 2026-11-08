@@ -25,8 +25,8 @@ int main()
     }
 
 
-     star = n * 2 -1;
-     space = 0;
+     star = n * 2 -3;
+     space = 1;
     for (int i = 1; i <= n; i++)
 
     {

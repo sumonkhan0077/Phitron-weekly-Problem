@@ -1,44 +1,95 @@
 #include <stdio.h>
-#include <math.h>
 int main()
 {
-    float n;
-    scanf("%f", &n);
+    int n;
+    scanf("%d", &n);
     int star = 1;
     int space = n - 1;
-    float h = ceil(n / 2);
     for (int i = 1; i <= n; i++)
     {
-        if (i <= h)
+        for (int j = 1; j <= space; j++)
+        {
+            printf(" ");
+        }
+        if (i % 2 == 0)
+        {
+            for (int j = 1; j <= star; j++)
+            {
+                printf("-");
+            }
+        }
+        else
+        {
+            for (int j = 1; j <= star; j++)
+            {
+                printf("#");
+            }
+        }
+
+        printf("\n");
+        star += 2;
+        space--;
+    }
+
+    star = n * 2 - 3;
+    space = 1;
+    if (n % 2 == 0)
+    {
+        for (int i = 1; i <= n; i++)
         {
             for (int j = 1; j <= space; j++)
             {
                 printf(" ");
             }
-            for (int j = 1; j <= star; j++)
+            if (i % 2 == 0)
             {
-                printf("*");
+                for (int j = 1; j <= star; j++)
+                {
+                    printf("-");
+                }
             }
-            printf("\n");
-            star += 4;
-            space -= 2;
-        }
+            else
+            {
+                for (int j = 1; j <= star; j++)
+                {
+                    printf("#");
+                }
+            }
 
-        if (i > h)
-        {
-            for (int j = i; j <= space; j++)
-            {
-                printf(" ");
-            }
-            for (int j = i; j <= star-2; j++)
-            {
-                printf("*");
-            }
             printf("\n");
-            star -= 4;
-            space += 2;
+            star -= 2;
+            space++;
         }
     }
+    else{
+         for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= space; j++)
+        {
+            printf(" ");
+        }
+        if (i % 2 == 0)
+        {
+            for (int j = 1; j <= star; j++)
+            {
+                printf("#");
+            }
+        }
+        else
+        {
+            for (int j = 1; j <= star; j++)
+            {
+                printf("-");
+            }
+        }
+
+        printf("\n");
+        star -= 2;
+        space++;
+    }
+
+    }
+
 
     return 0;
 }
