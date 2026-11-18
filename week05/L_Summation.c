@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void sum(int n, int i, int ans)
+void sum(int n, int i, long long ans)
 {
     if (i == n+1)
     {
-         printf("%d ", ans);
+         printf("%lld ", ans);
         return;
     }
 
-    int in;
-    scanf("%d", &in);
+    long long in;
+    scanf("%lld", &in);
     ans = ans + in;
    
     sum(n, i + 1, ans);
