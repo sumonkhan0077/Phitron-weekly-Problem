@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
     int t;
     scanf("%d", &t);
-    for (int i = 0; i < 1; i++)
+    for (int i = 0; i < t; i++)
     {
         int n;
         scanf("%d", &n);
@@ -31,15 +32,18 @@ int main()
                 }
             }
         }
-         for (int j = 0; j < n; j++)
-        {
-            printf("%d ", a[j]);
-        }
-        printf("\n");
+
+        int c[n];
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", b[j]);
+            c[j]=abs(a[j] - b[j]) ;
         }
+        
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", c[j]);
+        }
+        printf("\n");
     }
 
     return 0;
